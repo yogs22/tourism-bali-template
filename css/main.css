@@ -647,6 +647,7 @@ hr {
 .section-header {
 	width: 100%;
 	overflow: hidden;
+  min-height: 100vh;
 	max-height: 100%;
 }
 
@@ -684,7 +685,10 @@ hr {
 
 .section-header-inner {
   position: relative;
-  margin: 120px 230px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
 }
 @media (max-width: 420px) {
   .section-header-inner {
