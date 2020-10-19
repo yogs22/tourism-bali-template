@@ -4,7 +4,7 @@ jQuery(document).ready(function() {
 	window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
 
 	/* Scroll to class */
-	$('a[data-slide="slide"]').click(function(e) {
+	$('a[data-slide="slides"]').click(function(e) {
 		e.preventDefault();
 		$('.sidebar-overlay').trigger('click');
 		var target = $(this).data('slide-target');
@@ -77,12 +77,12 @@ jQuery(document).ready(function() {
 
 	// Tambah Animasi
 	$(window).scroll(function() {
-        $(".slide").each(function(){
+        $(".slides").each(function(){
             var pos = $(this).offset().top;
 
             var winTop = $(window).scrollTop();
             if (pos < winTop + 500) {
-            $(this).addClass("slideanim");
+            	$(this).addClass("slideanim");
             }
         });
     });

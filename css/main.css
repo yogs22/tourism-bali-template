@@ -219,10 +219,10 @@ hr {
 }
 
 /* Animasi */
-.slide{
+.slides {
   visibility: hidden;
 }
-.slideanim{
+.slideanim {
   animation-name: slide;
   -webkit-animation-name: slide;
   animation-duration: 1s;
